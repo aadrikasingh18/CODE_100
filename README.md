@@ -1,5 +1,10 @@
 # CODE_100
 
+4 JAN, 2022
+
+NO QUESTION
+
+
 3 JAN, 2O22
 
 import java.util.Scanner;
