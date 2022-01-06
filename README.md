@@ -4,6 +4,30 @@
 
 import java.util.Scanner;
 import java.util.Arrays;
+class Main 
+{ 
+   public static void main(String[] args) 
+   { 
+      Scanner sc = new Scanner(System.in); 
+      int n = sc.nextInt(); 
+      int k = sc.nextInt(); 
+      int t = 0;
+      int a[] = new int[n]; 
+      for(int i = 0; i<n; i++)
+      {
+         a[i] = sc.nextInt(); 
+      }
+      Arrays.sort(a);
+      t = Arrays.binarySearch(a,k);
+      if(t >= 0)
+      System.out.println("1");
+      else 
+      System.out.println("-1");
+   }
+}
+
+import java.util.Scanner;
+import java.util.Arrays;
 class Main
 {
 	public static void main (String[] args) 
