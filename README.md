@@ -3,6 +3,23 @@
 6 JAN, 2022
 
 import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+	   int b = sc.nextInt();
+   	int c = sc.nextInt();
+      if((a + b > c) && (b + c >a) && (c + a > b))
+      System.out.println("YES");
+      else
+      System.out.println("NO");
+   }
+}
+
+import java.util.Scanner;
 class Main
 {
 	public static void main (String[] args) 
