@@ -8,6 +8,43 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int k = 1;
+		int t = 0;
+		for(int i = 1; i <= n; i++)
+		{
+		   if(i % 2 != 0)
+		   {
+		      for(int j = 1; j <= 5; j++)
+		      {
+		        System.out.print(k + " ");
+		        k = k + 1;
+		      }
+		      System.out.println();
+		      t = k;
+		   }
+		   else
+		   {
+		      t = t + 4;
+		      for(int j = 1; j <= 5; j++)
+		      {
+		         System.out.print(t + " ");
+		         t = t - 1;
+		      }
+		      System.out.println();
+		      k = t + 6;
+		   }
+	  }
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
       int a = sc.nextInt();
 	   int b = sc.nextInt();
    	int c = sc.nextInt();
