@@ -1,5 +1,23 @@
 # CODE_100
 
+6 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		long n = sc.nextLong();
+	   long odd = 0;
+	   long even = 0;
+	   odd = n * n;
+	   even = n * (n + 1);
+	   System.out.println(odd + " " + even);
+	}
+}
+
+
 5 JAN, 2022
 
 import java.util.Scanner;
