@@ -1,5 +1,56 @@
 # CODE_100
 
+7 JAN, 2022
+
+import java.util.Scanner;
+import java.lang.Math;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+	   int r = 0;
+	   int v = 0;
+	   
+	   // DAY 0 --> 1 PERSON IS INFECTED
+      // NEXT 10 DAYS --> INFECTED PEOPLE DOUBLES EACH DAY 
+      // FROM 11 DAY ONWARDS --> INFECTED PEOPLE TRIPLES EACH DAY 
+      // N --> POPULATION
+      // D --> DAY
+      
+      for(int i = 0; i < t; i++)
+      {
+         int n = sc.nextInt();
+         int d = sc.nextInt();
+         double f = 0.0; // INFECTED
+         if(d<=10)
+         {
+            {
+               f = Math.pow(2,d); 
+            }
+            v = (int)f;
+            if(f < n)
+            System.out.println(v);
+            else
+            System.out.println(n);
+         }
+         if(d>=11)
+         {
+            f = Math.pow(2,10);
+            r = d - 10;
+            double f2 = 0.0;
+            f2 = f * Math.pow(3,r);
+            v = (int)f2;
+            if(v < n)
+            System.out.println(v);
+            else
+            System.out.println(n);
+         }
+      }
+ 	}
+}
+
 6 JAN, 2022
 
 import java.util.Scanner;
