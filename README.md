@@ -2,6 +2,8 @@
 
 8 JAN, 2022
 
+3 GFG QUES
+
 // WRONG
 import java.util.Scanner;
 public class Main
