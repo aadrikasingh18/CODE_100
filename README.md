@@ -1,5 +1,49 @@
 # CODE_100
 
+8 JAN, 2022
+
+// WRONG
+import java.util.Scanner;
+public class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		int k = 0;
+		sc.nextLine(); 
+		for(int i=0; i<t; i++)
+		{
+		   String s = sc.nextLine();
+		   int l = 0;
+		   l = s.length();
+		   if(l == 1)
+		   System.out.println("NO"); 
+		   else
+		   {
+		      for(int j=0; j<l-2; j++)
+		      {
+		         String x;
+		         x = s.substring(j,j+2);
+		         if(x.equals("10") || x.equals("11"))
+		         {
+		             k++;
+		             System.out.println("YES");
+		             break;
+		         }
+		         else
+		         {
+		             String y;
+		             y = s.substring(l-2);
+		             if(y.equals("10") || y.equals("11"))
+		             System.out.println("YES");
+		         }
+		      }
+		   }
+		}
+	}
+}
+
 7 JAN, 2022
 
 import java.util.Scanner;
