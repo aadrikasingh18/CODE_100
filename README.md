@@ -1,5 +1,44 @@
 # CODE_100
 
+11 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		// FUEL ECONOMY --> DIS TRAVEL IN 1L OF FUEL
+		// BASE FUEL ECONOMY --> FE WHEN THERE IS ONLY ONE PERSON (M KM/L)
+		// EVERY EXTRA PASSENGER DEC THE FE BY 1 KM/L
+		// P --> NO. OF PEOPLE
+		// V --> L OF FUEL
+		
+		// MAX DIS TRAVELLED UNDER GIVEN CONDITION
+		
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int p = sc.nextInt(); // no. of people (5)
+		   int m = sc.nextInt(); // base fuel economy (10)
+		   int v = sc.nextInt(); // amount of fuel
+		   int d = 0;
+		   d = p - 1; // extra passenger (4)
+		   int e = 0; // effective fuel economy
+		   e = m - d; // (6)
+		   int max = 0;
+		   max = e * v;
+		   System.out.println(max);
+		   
+		}
+	}
+}
+
+NEW STREAK START
+
+***
+
 8 JAN, 2022
 
 3 GFG QUES
