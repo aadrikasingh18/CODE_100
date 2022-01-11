@@ -2,6 +2,31 @@
 
 11 JAN, 2022
 
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int d = sc.nextInt();
+		int sum1 = 0;
+		int sum2 = 0;
+		sum1 = a + c;
+		sum2 = b + d;
+		if(sum1 == 180 && sum2 == 180)
+		System.out.println("YES");
+		else
+		System.out.println("NO");
+	}
+}
+}
+
 import java.util.Arrays;
 import java.util.Scanner;
 class Main
