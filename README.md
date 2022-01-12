@@ -1,5 +1,50 @@
 # CODE_100
 
+12 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		int time = 0;
+	   // n --> no. of people in queue
+	   // p --> position from front at which chef is standing
+	   // x --> child vaccine min
+      // y --> elder vaccine min
+      for(int i=0; i<t; i++)
+      {
+         int n = sc.nextInt();
+         int p = sc.nextInt();
+         int x = sc.nextInt();
+         int y = sc.nextInt();
+         int a[] = new int[n];
+         for(int j = 0; j < n; j++)
+         {
+            a[j] = sc.nextInt();
+         }
+         n = p;
+         int b[] = new int[n];
+         for(int j = 0; j < n; j++)
+         {
+            b[j] = a[j]; 
+         }
+         for(int j = 0; j < n; j++)
+         {
+            if(a[j] == 0)
+            time = time + x;
+            else if(a[j] == 1)
+            time = time + y;
+         }
+         System.out.println(time);
+         time = 0;
+      }
+	}
+}
+
+
 11 JAN, 2022
 
 import java.util.Scanner;
