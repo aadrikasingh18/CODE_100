@@ -9,6 +9,29 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   // N -> E -> S -> W 
+		   if(n % 4 == 0)
+		   System.out.println("NORTH");
+		   else if(n % 4 == 1)
+		   System.out.println("EAST");
+		   else if(n % 4 == 2)
+		   System.out.println("SOUTH");
+		   else
+		   System.out.println("WEST");
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		int time = 0;
 	   // n --> no. of people in queue
 	   // p --> position from front at which chef is standing
