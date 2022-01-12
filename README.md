@@ -9,6 +9,41 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		// n --> total no. of slippers
+		// l --> no. of left slippers
+		// x --> the price of a pair of slippers in rupees
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   int l = sc.nextInt();
+		   int x = sc.nextInt();
+		   int p = 0;
+		   int r = 0;
+		   //System.out.println(l);
+		   r = n - l;
+		   //System.out.println(r);
+		   if(l >= r)
+		   {
+		     p = r * x;
+		     System.out.println(p);
+		   }
+		   else if(r > l)
+		   {
+		     p = l * x;
+		     System.out.println(p);
+		   }
+		   p = 0;
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
       for(int i=0; i<t; i++)
       {
          int r = sc.nextInt();
