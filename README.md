@@ -9,6 +9,26 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+      for(int i=0; i<t; i++)
+      {
+         int r = sc.nextInt();
+         if(r >= 2000)
+         System.out.println("1");
+         else if(r >= 1600 && r < 2000)
+         System.out.println("2");
+         else if(r < 1600)
+         System.out.println("3");
+      }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
 		   int n = sc.nextInt();
