@@ -1,5 +1,30 @@
 # CODE_100
 
+13 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); // no. of friends
+		   int x = sc.nextInt(); // amount of gold in the mine
+		   int y = sc.nextInt(); // atmost y kg capacity of each person
+		   int r = 0;
+		   r = (n+1)*y;
+		   if(r>=x)
+		   System.out.println("YES");
+		   else
+		   System.out.println("NO");
+		}
+	}
+}
+
+
 12 JAN, 2022
 
 1 gfg ques
