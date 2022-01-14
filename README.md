@@ -1,5 +1,49 @@
 # CODE_100
 
+14 JAN, 2022
+
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int d1 = sc.nextInt(); //DSA
+		   int d2 = sc.nextInt();
+		   int d3 = sc.nextInt();
+		   int s1 = sc.nextInt();
+		   int s2 = sc.nextInt();
+		   int s3 = sc.nextInt();
+		   int sumd = d1 + d2 + d3;
+		   int sums = s1 + s2 + s3;
+		   if(sumd == sums && d1 == s1 && d2 == s2)
+		   System.out.println("TIE");
+		   else
+		   {
+		   if(sumd > sums)
+		   System.out.println("DRAGON");
+		   else if(sums > sumd)
+		   System.out.println("SLOTH");
+		   else
+		   {
+		      if(d1 > s1)
+		      System.out.println("DRAGON");
+		      else if(s1 > d1)
+		      System.out.println("SLOTH");
+		      else
+		      {
+		         if(d2 > s2)
+		         System.out.println("DRAGON");
+		         else if(s2 > d2)
+		         System.out.println("SLOTH");
+		      }
+		    }  
+	    }
+	}
+   }
+}
+
 13 JAN, 2022
 
 import java.util.Scanner;
