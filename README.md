@@ -2,7 +2,7 @@
 
 15 JAN, 2022
 
-7 GFG QUES
+8 GFG QUES
 
 import java.util.Scanner;
 class Main
