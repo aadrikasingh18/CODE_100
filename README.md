@@ -1,5 +1,44 @@
 # CODE_100
 
+15 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int j=0; j<t; j++)
+		{
+		   int n = sc.nextInt(); // SETTERS
+		   long k = sc.nextLong(); // PROBLEMS IN A CONTEST
+		   long d = sc.nextLong(); // NO. OF DAYS
+		   long a[] = new long [n];
+		   long sum = 0;
+		   for(int i=0; i<n; i++)
+		   {
+		      a[i] = sc.nextInt();
+		      sum = sum + a[i];
+		   }
+		   if(sum < k)
+		   System.out.println("0");
+		   else if(sum == k)
+		   System.out.println("1");
+		   else
+		   {
+		      long g = 0;
+            g = sum / k;
+            if(g <= d)
+            System.out.println(g);
+            else
+            System.out.println(d);
+		   }
+		}
+	}
+}
+
+
 14 JAN, 2022
 
 {
