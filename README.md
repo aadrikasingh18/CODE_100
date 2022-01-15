@@ -2,7 +2,7 @@
 
 15 JAN, 2022
 
-4 + 3 GFG QUES
+4 + 3 = 7 GFG QUES
 
 import java.util.Scanner;
 class Main
