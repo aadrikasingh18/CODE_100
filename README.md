@@ -1,5 +1,71 @@
 # CODE_100
 
+17 JAN, 2022
+
+import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+   public static void main(String[] args)
+   {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); 
+        for (int i = 0; i < t; i++)
+        {
+            int n = sc.nextInt(); 
+            int x = sc.nextInt(); 
+            int a[] = new int[n];
+            int sum = 0, in = 0, temp = 0;
+            boolean flag = true;
+
+            for (int j = 0; j < n; j++)
+            {
+                a[j] = sc.nextInt(); 
+                sum = sum + a[j];  
+            }
+            
+            if (sum < x) 
+            {
+               System.out.println("-1");
+               flag = false;
+            }
+            
+            else
+            {
+            Arrays.sort(a); 
+            
+            for (int j = 0; j < n / 2; j++)  // ARRAY REVERSE
+            {
+               temp = a[j];
+               a[j] = a[n - j - 1];
+               a[n - j - 1] = temp;
+            }
+         
+            int count = 0;
+            
+            int sum2 = 0;
+            for (int j = 0; j < n; j++)
+            {
+               sum2 = sum2 + a[j]; 
+               count ++; 
+               if (sum2 >= x)
+               {
+                  flag = true;
+                  break;
+               }
+            }
+            
+            if(flag)
+            {
+               System.out.println(count);
+               count = 0;
+            }
+         }
+    }
+      
+   }
+}
+
 15 JAN, 2022
 
 9 GFG QUES
