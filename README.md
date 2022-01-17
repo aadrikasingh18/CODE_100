@@ -3,6 +3,44 @@
 17 JAN, 2022
 
 import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); // n is the number of balls
+		   int r[] = new int[3];
+		   int g[] = new int[3];
+		   int b[] = new int[3];
+		   for(int j=0; j<3; j++)
+		   {
+		      r[j] = sc.nextInt();
+		   }
+		   for(int j=0; j<3; j++)
+		   {
+		      g[j] = sc.nextInt();
+		   }
+		   for(int j=0; j<3; j++)
+		   {
+		      b[j] = sc.nextInt();
+		   }
+		   int lt = 0;
+		   lt = g[0] + b[0] + b[1];
+		   int ut = 0;
+		   ut = r[1] + r[2] + g[2];
+		   int max = 0;
+		   max = Math.max(lt,ut);
+		   System.out.println(max);
+		   
+		}
+	}
+}
+
+
+import java.util.Scanner;
 import java.util.Arrays;
 class Main
 {
