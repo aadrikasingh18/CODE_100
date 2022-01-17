@@ -11,6 +11,80 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int n = sc.nextInt();
+		   sc.nextLine();
+		   String s = sc.nextLine();
+		   String K;
+		   int d=n/4;
+		   for(int j=0; j<d; j++)
+		   {
+		       K = s.substring(0,4);
+		       s = s.substring(4);
+		       // System.out.println(a +" a is at count "); // <--
+		       // System.out.println(s + " s is at count "); // <--
+                if (K.equals("0000"))
+                    System.out.print("a");
+
+                else if (K.equals("0001"))
+                    System.out.print("b");
+
+                else if (K.equals("0010"))
+                    System.out.print("c");
+
+                else if (K.equals("0011"))
+                    System.out.print("d");
+
+                else if (K.equals("0100"))
+                    System.out.print("e");
+
+                else if (K.equals("0101"))
+                    System.out.print("f");
+
+                else if (K.equals("0110"))
+                    System.out.print("g");
+
+                else if (K.equals("0111"))
+                    System.out.print("h");
+
+                else if (K.equals("1000"))
+                    System.out.print("i");
+
+                else if (K.equals("1001"))
+                    System.out.print("j");
+
+                else if (K.equals("1010"))
+                    System.out.print("k");
+
+                else if (K.equals("1011"))
+                    System.out.print("l");
+
+                else if (K.equals("1100"))
+                    System.out.print("m");
+
+                else if (K.equals("1101"))
+                    System.out.print("n");
+
+                else if (K.equals("1110"))
+                    System.out.print("o");
+
+                else if (K.equals("1111"))
+                    System.out.print("p");	       
+		   }
+		 System.out.println();  
+		}
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int n = sc.nextInt(); // n is the number of balls
 		   int r[] = new int[3];
 		   int g[] = new int[3];
