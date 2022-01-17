@@ -21,8 +21,6 @@ class Main
 		   {
 		       K = s.substring(0,4);
 		       s = s.substring(4);
-		       // System.out.println(a +" a is at count "); // <--
-		       // System.out.println(s + " s is at count "); // <--
                 if (K.equals("0000"))
                     System.out.print("a");
 
