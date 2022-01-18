@@ -1,6 +1,46 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+18 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt(); 
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); //12
+		   sc.nextLine();
+		   String s = sc.nextLine(); //111111111111
+		   char ch[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'};
+		   String a,l="";
+		   int b=0, r=0,w=1, ans=0;
+		   int m,c=0; 
+		   for(int j=0; j<=n-4; j=j+4) //j--> 4 8
+		   {
+		       c++;
+		       a = s.substring(j,j+4); //(0,4) (4,8)
+		       m = Integer.parseInt(a); //1111
+		       while(m!=0)
+		       {
+		          r = m % 10; 
+		          m = m / 10; 
+		          ans = ans + r*w; 
+		          w = w * 2; 
+		       }
+		       l = l + ch[ans]; 
+		       ans = 0;
+		       w = 1;
+		    }
+		    System.out.println(l);
+   	}
+	}
+}
+
+
 17 JAN, 2022
 
 import java.util.Scanner;
