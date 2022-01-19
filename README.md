@@ -5,6 +5,36 @@
 
 import java.util.Scanner;
 class Main
+{ 
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int count = 0;
+		   long k = sc.nextLong();
+		   if(k%2 != 0)
+		   System.out.println("0");
+		   else
+		   {
+		      while(k%2 == 0)
+		      {
+		         count ++;
+		         k = k/2;
+		      }
+		      if(count > 0)
+		      System.out.println(count);
+		      else
+		      System.out.println("0");
+		   }
+		}
+	}
+}
+
+
+import java.util.Scanner;
+class Main
 {
 	public static void main (String[] args) 
 	{
