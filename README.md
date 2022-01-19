@@ -4,6 +4,44 @@
 19 JAN, 2022
 
 import java.util.Scanner;
+public class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int j=0; j<t; j++)
+		{
+	      int n = sc.nextInt();
+		   int i;
+		   
+		   if(n == 1)
+		   {
+		      System.out.println("no");
+		      continue;
+		   }
+		   
+		   boolean isPrime = true;
+		   
+		   for(i=2; i<n; i++)
+		   {
+		      if(n%i == 0)
+		      {
+		      isPrime = false;
+		      break;
+		   }
+		   }
+		   
+		   if(isPrime)
+		   System.out.println("yes");
+		   else
+		   System.out.println("no");
+		}
+	}
+}
+
+
+import java.util.Scanner;
 class Main
 { 
 	public static void main (String[] args) 
