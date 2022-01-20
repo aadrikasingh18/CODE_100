@@ -12,6 +12,35 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int g = 0, b = 0;
+		   int a[] = new int[7];
+		   for(int j=0; j<7; j++)
+		   {
+		      a[j] = sc.nextInt();
+		      if(a[j] == 1)
+		      g++;
+		      else if(a[j] == 0)
+		      b++;
+		   }
+		   if(g>b)
+		   System.out.println("YES");
+		   else
+		   System.out.println("NO");
+		   
+		}
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int count = 0;
 		   long e = sc.nextLong();
 		   long k = sc.nextLong();
