@@ -1,6 +1,39 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+21 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int j=0; j<t; j++)
+		{
+		   int a[] = new int[5];
+		   int e = 0, b=0, d=0;
+		   for(int i=0; i<5; i++)
+		   {
+		      a[i] = sc.nextInt();
+		      if(a[i] == 0)
+		      d++; // DRAW
+		      else if(a[i] == 1)
+		      b++; // INDIA
+		      else 
+		      e++;
+		   }
+		   if(b>e)
+		   System.out.println("INDIA");
+		   else if(e>b)
+		   System.out.println("ENGLAND");
+		   else if(e==b)
+		   System.out.println("DRAW");
+		}
+	}
+}
+
 20 JAN, 2022
 
 import java.util.Scanner;
