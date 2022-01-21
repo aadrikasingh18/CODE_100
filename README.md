@@ -12,6 +12,30 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int n = sc.nextInt(); // LENGTH OF CANDY --> 3
+		   int k = sc.nextInt(); // UNIT TO BE EATEN --> 1
+		   int r = 0, m = 0;
+		   r = n % k;
+		   if(r == 0)
+		   {
+		      m = n / k;
+		      System.out.println(m);
+		   }
+		   else 
+		      System.out.println("-1");
+		 }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int g1 = sc.nextInt();
 		   int s1 = sc.nextInt();
 		   int b1 = sc.nextInt();
