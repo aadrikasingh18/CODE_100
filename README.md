@@ -10,6 +10,36 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+	   for(int i=0; i<t; i++)
+	   {
+	      int d = sc.nextInt();
+	      int x = sc.nextInt(); // x unit of work everyday
+	      int y = sc.nextInt(); // y unit of work for first d day
+	      int z = sc.nextInt(); // z unit of work for 7-d day
+	      
+	      int f = 0;
+	      f = x * 7;
+	      
+	      int s = 0;
+	      s = (y * d) + z * (7 - d);
+	      
+	      int max = 0;
+	      max=Math.max(f,s);
+	      
+	      System.out.println(max);
+	   }
+	   
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int j=0; j<t; j++)
 		{
 		   int a[] = new int[5];
