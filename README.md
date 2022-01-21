@@ -225,7 +225,6 @@ class Main
 	}
 }
 
-
 import java.util.Scanner;
 class Main
 {
@@ -364,8 +363,7 @@ class Main
          r = 52 % k;
          System.out.println(r);
       }
-      
-	}
+    }
 }
 
 18 JAN, 2022
@@ -430,57 +428,41 @@ class Main
 		       s = s.substring(4);
                 if (K.equals("0000"))
                     System.out.print("a");
-
-                else if (K.equals("0001"))
+		else if (K.equals("0001"))
                     System.out.print("b");
-
-                else if (K.equals("0010"))
+		else if (K.equals("0010"))
                     System.out.print("c");
-
                 else if (K.equals("0011"))
                     System.out.print("d");
-
-                else if (K.equals("0100"))
+		else if (K.equals("0100"))
                     System.out.print("e");
-
                 else if (K.equals("0101"))
                     System.out.print("f");
-
                 else if (K.equals("0110"))
                     System.out.print("g");
-
                 else if (K.equals("0111"))
                     System.out.print("h");
-
                 else if (K.equals("1000"))
                     System.out.print("i");
-
                 else if (K.equals("1001"))
                     System.out.print("j");
-
                 else if (K.equals("1010"))
                     System.out.print("k");
-
                 else if (K.equals("1011"))
                     System.out.print("l");
-
                 else if (K.equals("1100"))
                     System.out.print("m");
-
-                else if (K.equals("1101"))
+		else if (K.equals("1101"))
                     System.out.print("n");
-
                 else if (K.equals("1110"))
                     System.out.print("o");
-
-                else if (K.equals("1111"))
+		else if (K.equals("1111"))
                     System.out.print("p");	       
-		   }
+	     }
 		 System.out.println();  
 		}
 	}
 }
-
 
 import java.util.Scanner;
 class Main
@@ -518,7 +500,6 @@ class Main
 	}
 }
 
-
 import java.util.Scanner;
 import java.util.Arrays;
 class Main
@@ -555,7 +536,7 @@ class Main
             }
            int count = 0;
            int sum2 = 0;
-            for (int j = 0; j < n; j++)
+           for (int j = 0; j < n; j++)
             {
                sum2 = sum2 + a[j]; 
                count ++; 
@@ -605,16 +586,15 @@ class Main
 		   else
 		   {
 		      long g = 0;
-            g = sum / k;
-            if(g <= d)
-            System.out.println(g);
-            else
-            System.out.println(d);
+                      g = sum / k;
+                      if(g <= d)
+                      System.out.println(g);
+                      else
+                      System.out.println(d);
 		   }
-		}
+	      }
 	}
 }
-
 
 14 JAN, 2022
 
@@ -759,7 +739,7 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
-      for(int i=0; i<t; i++)
+                for(int i=0; i<t; i++)
       {
          int r = sc.nextInt();
          if(r >= 2000)
