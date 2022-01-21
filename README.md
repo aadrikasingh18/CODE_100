@@ -10,6 +10,40 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int j=0; j<t; j++)
+		{
+		   // A min --> each inter-district e-pass --> 0
+		   // B min --> each inter-state e-pass --> 1
+		   int n = sc.nextInt();
+		   int a = sc.nextInt();
+		   int b = sc.nextInt();
+		   int A = 0, B = 0;
+		   int tt = 0;
+		   sc.nextLine();
+		   String s = sc.nextLine();
+		   for(int i=0; i<n; i++)
+		   {
+		      char ch;
+		      ch = s.charAt(i);
+		      if(ch == '0')
+		      A++;
+		      else
+		      B++;
+		   }
+		   tt = (a*A) + (b*B);
+		   System.out.println(tt);
+		}
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
 		   int a = sc.nextInt();
