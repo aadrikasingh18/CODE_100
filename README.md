@@ -10,6 +10,39 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		// CHEF --> X MIN --> P WRONG SUBMISSION
+      // CHEFINA --> Y MIN --> Q WRONG SUBMISSION
+      // WRONG SUBMISSION --> 10 MIN PENALTY
+      for(int i=0; i<t; i++)
+      {
+         int x = sc.nextInt();
+         int y = sc.nextInt();
+         int p = sc.nextInt();
+         int q = sc.nextInt();
+         
+         int m = 0, f = 0;
+         
+         m = x + (10*p); // CHEF
+         f = y + (10*q); // CHEFINA
+         
+         if(m>f)
+         System.out.println("CHEFINA");
+         else if(f>m)
+         System.out.println("CHEF");
+         else
+         System.out.println("DRAW");
+      }
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int j=0; j<t; j++)
 		{
 		   // A min --> each inter-district e-pass --> 0
