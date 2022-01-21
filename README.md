@@ -872,15 +872,12 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		
 		// FUEL ECONOMY --> DIS TRAVEL IN 1L OF FUEL
 		// BASE FUEL ECONOMY --> FE WHEN THERE IS ONLY ONE PERSON (M KM/L)
 		// EVERY EXTRA PASSENGER DEC THE FE BY 1 KM/L
 		// P --> NO. OF PEOPLE
 		// V --> L OF FUEL
-		
 		// MAX DIS TRAVELLED UNDER GIVEN CONDITION
-		
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
@@ -894,8 +891,7 @@ class Main
 		   int max = 0;
 		   max = e * v;
 		   System.out.println(max);
-		   
-		}
+		 }
 	}
 }
 
@@ -989,14 +985,12 @@ class Main
 		int t = sc.nextInt();
 	   int r = 0;
 	   int v = 0;
-	   
-	   // DAY 0 --> 1 PERSON IS INFECTED
+      // DAY 0 --> 1 PERSON IS INFECTED
       // NEXT 10 DAYS --> INFECTED PEOPLE DOUBLES EACH DAY 
       // FROM 11 DAY ONWARDS --> INFECTED PEOPLE TRIPLES EACH DAY 
       // N --> POPULATION
       // D --> DAY
-      
-      for(int i = 0; i < t; i++)
+       for(int i = 0; i < t; i++)
       {
          int n = sc.nextInt();
          int d = sc.nextInt();
@@ -1025,7 +1019,7 @@ class Main
             System.out.println(n);
          }
       }
- 	}
+   }
 }
 
 6 JAN, 2022
@@ -1072,12 +1066,12 @@ class Main
 {
 	public static void main (String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
-      int a = sc.nextInt();
+           Scanner sc = new Scanner(System.in);
+           int a = sc.nextInt();
 	   int b = sc.nextInt();
-   	int c = sc.nextInt();
-      if((a + b + c == 180) && (a > 0) && (a <= 178) && 
-         (b > 0) && (b <= 178) && (c > 0) && (c <= 178)) 
+   	   int c = sc.nextInt();
+           if((a + b + c == 180) && (a > 0) && (a <= 178) && 
+          (b > 0) && (b <= 178) && (c > 0) && (c <= 178)) 
       System.out.println("YES");
       else
       System.out.println("NO");
