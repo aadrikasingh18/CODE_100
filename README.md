@@ -131,7 +131,6 @@ class Main
 		   int b1 = sc.nextInt();
 		   int a2 = sc.nextInt();
 		   int b2 = sc.nextInt();
-		   
 		   if((a == a1 || a == b1) && (b == a1 || b == b1))
 		   System.out.println("1");
 		   else if((a == a2 || a == b2) && (b == a2 || b == b2))
@@ -155,22 +154,16 @@ class Main
 	      int x = sc.nextInt(); // x unit of work everyday
 	      int y = sc.nextInt(); // y unit of work for first d day
 	      int z = sc.nextInt(); // z unit of work for 7-d day
-	      
 	      int f = 0;
 	      f = x * 7;
-	      
 	      int s = 0;
 	      s = (y * d) + z * (7 - d);
-	      
 	      int max = 0;
 	      max=Math.max(f,s);
-	      
 	      System.out.println(max);
 	   }
-	   
-	}
+      }
 }
-
 
 import java.util.Scanner;
 class Main
@@ -228,7 +221,6 @@ class Main
 		   System.out.println("YES");
 		   else
 		   System.out.println("NO");
-		   
 		}
 	}
 }
@@ -253,8 +245,7 @@ class Main
 		      count ++;
 		   }
 		   System.out.println(count);
-		   
-		}
+	       }
 	}
 }
 
@@ -272,15 +263,12 @@ public class Main
 		{
 	      int n = sc.nextInt();
 		   int i;
-		   
 		   if(n == 1)
 		   {
 		      System.out.println("no");
 		      continue;
 		   }
-		   
 		   boolean isPrime = true;
-		   
 		   for(i=2; i<n; i++)
 		   {
 		      if(n%i == 0)
@@ -289,7 +277,6 @@ public class Main
 		      break;
 		   }
 		   }
-		   
 		   if(isPrime)
 		   System.out.println("yes");
 		   else
@@ -297,7 +284,6 @@ public class Main
 		}
 	}
 }
-
 
 import java.util.Scanner;
 class Main
@@ -328,7 +314,6 @@ class Main
 	}
 }
 
-
 import java.util.Scanner;
 class Main
 {
@@ -356,7 +341,6 @@ class Main
 	   }
 	}
 }
-
 
 import java.util.Scanner;
 class Main
