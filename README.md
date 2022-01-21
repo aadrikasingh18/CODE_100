@@ -1232,7 +1232,6 @@ class Main
 		   System.out.println("YES");
 		   else
 		   System.out.println("NO");
-		   
 		}
 	}
 }
@@ -1261,8 +1260,7 @@ class Main
                System.out.println(m/2);
             }
          }
-         
-         if(n > 2)
+          if(n > 2)
          {
             int s = 0;
             s = n % 2;
@@ -1293,7 +1291,7 @@ class Main
                   System.out.println((n*m)/2);
                }
             }
-		   }
+	    }
 	  }
 	}
 }
@@ -1301,7 +1299,6 @@ class Main
 4 JAN, 2022
 
 NO QUESTION
-
 
 3 JAN, 2O22
 
@@ -1929,7 +1926,6 @@ public class Main
 		           k=0; 
 		           break;
 		        }
-		     
 		     case 3 : 
 		        {
 		           System.out.println("Senior Developer"); 
