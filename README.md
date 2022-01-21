@@ -68,12 +68,9 @@ class Main
          int y = sc.nextInt();
          int p = sc.nextInt();
          int q = sc.nextInt();
-         
          int m = 0, f = 0;
-         
          m = x + (10*p); // CHEF
          f = y + (10*q); // CHEFINA
-         
          if(m>f)
          System.out.println("CHEFINA");
          else if(f>m)
@@ -81,7 +78,7 @@ class Main
          else
          System.out.println("DRAW");
       }
-	}
+  }
 }
 
 
