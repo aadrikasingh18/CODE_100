@@ -20,6 +20,33 @@ class Main
 		   {
 		      r = n % 10;
 		      n = n / 10;
+		      sum = (sum*10) + r;
+		   }
+		   if(sum == m)
+		   System.out.println("wins");
+		   else
+		   System.out.println("loses");
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   int m = 0, r = 0, sum= 0, k = 1, p1 = 0;
+		   double p;
+		   m = n;
+		   while(n != 0)
+		   {
+		      r = n % 10;
+		      n = n / 10;
 		      k++;
 		   }
 		   k--;
