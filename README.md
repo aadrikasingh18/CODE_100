@@ -1,6 +1,47 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+22 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   int m = 0, r = 0, sum= 0, k = 1, p1 = 0;
+		   double p;
+		   m = n;
+		   while(n != 0)
+		   {
+		      r = n % 10;
+		      n = n / 10;
+		      k++;
+		   }
+		   k--;
+		   k--;
+		   n = m;
+		   while(n != 0)
+		   {
+		      r = n % 10;
+		      n = n / 10;
+		      p = Math.pow(10,k);
+		      p1 = (int)p;
+		      sum = sum + r * p1 ;
+		      k--;
+		   }
+		   if(sum == m)
+		   System.out.println("wins");
+		   else
+		   System.out.println("loses");
+		}
+	}
+}
+
 21 JAN, 2022
 
 import java.util.Scanner;
