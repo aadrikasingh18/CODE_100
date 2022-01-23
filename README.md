@@ -10,6 +10,26 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		// 1st sec --> 3 step forward
+		// 2nd sec --> 1 step backward
+		for(int i=0; i<t; i++)
+		{
+		   int k = sc.nextInt();
+		   if(k % 2 == 0)
+		   System.out.println(k);
+		   else
+		   System.out.println(k+2);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int i=0 ;i<t; i++)
 		{
 		   // FAMILY TRIP --> X DAYS
