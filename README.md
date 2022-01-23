@@ -10,6 +10,21 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   System.out.println("1" + " " +n);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		// 1st sec --> 3 step forward
 		// 2nd sec --> 1 step backward
 		for(int i=0; i<t; i++)
