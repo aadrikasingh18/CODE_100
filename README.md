@@ -10,6 +10,30 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+	   for(int i=0; i<t; i++)
+	   {
+	      int x = sc.nextInt(); // PLANE
+	      int y = sc.nextInt(); // BUS
+	      int z = sc.nextInt(); // TRAIN
+	      int s = 0;
+	      s = x + y;
+	      if(s == z)
+	      System.out.println("EQUAL");
+	      else if(s > z)
+	      System.out.println("TRAIN");
+	      else
+	      System.out.println("PLANEBUS");
+	   }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
 		   int n = sc.nextInt();
