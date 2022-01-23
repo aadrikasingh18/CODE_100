@@ -14,7 +14,7 @@ class Main
 		{
 		   // FAMILY TRIP --> X DAYS
 		   // FRIENDS TRIP --> Y DAYS
-	   	// VACATION WIL LAST ONLY FOR Z DAYS
+	   	   // VACATION WIL LAST ONLY FOR Z DAYS
 		   int x = sc.nextInt();
 		   int y = sc.nextInt();
 		   int z = sc.nextInt();
@@ -24,9 +24,7 @@ class Main
 		   System.out.println("YES");
 		   else
 		   System.out.println("NO");
-		   
-		}
-	
+		   }
 	}
 }
 
