@@ -1,6 +1,36 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+23 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0 ;i<t; i++)
+		{
+		   // FAMILY TRIP --> X DAYS
+		   // FRIENDS TRIP --> Y DAYS
+	   	// VACATION WIL LAST ONLY FOR Z DAYS
+		   int x = sc.nextInt();
+		   int y = sc.nextInt();
+		   int z = sc.nextInt();
+		   int a = 0;
+		   a = x + y;
+		   if(a <= z)
+		   System.out.println("YES");
+		   else
+		   System.out.println("NO");
+		   
+		}
+	
+	}
+}
+
+
 22 JAN, 2022
 
 import java.util.Scanner;
