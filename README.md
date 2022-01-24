@@ -12,6 +12,27 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int n = sc.nextInt();
+		   int a = sc.nextInt();
+		   int b = 0;
+		   b = n - a;
+		   if(b>a)
+		   System.out.println(a);
+		   else
+		   System.out.println(b);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int g = sc.nextInt();
 		   int c = sc.nextInt();
 		   int ans = 0;
