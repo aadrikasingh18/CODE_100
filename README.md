@@ -10,6 +10,31 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int m = sc.nextInt();
+		   int h = sc.nextInt();
+		   int b = 0;
+		   b = m / (h*h);
+         if(b <= 18)
+         System.out.println("1");
+         else if(b > 18 && b < 25)
+         System.out.println("2");
+         else if(b > 24 && b < 30)
+         System.out.println("3");
+         else if(b >= 30)
+         System.out.println("4");
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		int mul = 1;
 		mul = t * t;
 		mul = mul / 2;
