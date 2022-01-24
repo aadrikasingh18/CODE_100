@@ -12,6 +12,24 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int g = sc.nextInt();
+		   int c = sc.nextInt();
+		   int ans = 0;
+		   ans = (c*c)/(2*g);
+		   System.out.println(ans);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int m = sc.nextInt();
 		   int h = sc.nextInt();
 		   int b = 0;
