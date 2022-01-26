@@ -13,6 +13,24 @@ class Main
 		for(int i=0; i<t; i++)
 		{
 		   int x = sc.nextInt();
+		   if(x == 2)
+		   System.out.println("1 2 3");
+		   else
+		   System.out.println((x-2)+" "+x+" "+(x+2));
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt();
 		   int y = sc.nextInt();
 		   int z = sc.nextInt();
 		   int b = 0, s = 0, p = 0;
