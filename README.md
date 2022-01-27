@@ -1,6 +1,8 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+27 JAN, 2022
+
 26 JAN, 2022
 
 import java.util.Scanner;
