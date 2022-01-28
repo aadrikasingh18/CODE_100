@@ -3,6 +3,30 @@
 
 28 JAN, 2022
 
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int a = sc.nextInt();
+		   int b = sc.nextInt();
+		   int c = sc.nextInt();
+		   // power P is used --> hit points increases by P
+		   int h = 0;
+		   int x=0, y=0, z=0;
+		   x = a + b;
+		   y = b + c;
+		   z = a + c;
+		   h = Math.max(x,Math.max(y,z));
+		   System.out.println(h);
+		 }
+	}
+}
+
 27 JAN, 2022
 
 26 JAN, 2022
