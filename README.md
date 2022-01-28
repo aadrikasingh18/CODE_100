@@ -45,6 +45,8 @@ class Main
 
 27 JAN, 2022
 
+NO QUES SOLVED
+
 26 JAN, 2022
 
 import java.util.Scanner;
