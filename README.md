@@ -9,6 +9,22 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		long t = sc.nextLong();
+	   if(t <= 50)
+	   System.out.println("100");
+	   else if(t > 50 && t <= 100)
+	   System.out.println("50");
+	   else
+	   System.out.println("0");
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
