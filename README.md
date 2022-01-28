@@ -9,6 +9,23 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		sc.nextLine();
+		for(int i=0; i<t; i++)
+		{
+		   String s = sc.nextLine();
+		   s = s.replace("party","pawri");
+		   System.out.println(s);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		long t = sc.nextLong();
 	   if(t <= 50)
 	   System.out.println("100");
