@@ -19,19 +19,15 @@ class Main
 		   int w2 = sc.nextInt();// B
 		   int c2 = sc.nextInt();// B
 		   int a=0, b=0;
-		   
-	      if(((r1 > r2)&&(w1 > w2)) || ((r1 > r2)&&(c1 > c2)) || 
-	         ((w1 > w2)&&(c1 > c2)))
+		   if(((r1 > r2)&&(w1 > w2)) || ((r1 > r2)&&(c1 > c2)) || ((w1 > w2)&&(c1 > c2)))
 		   a++;
 		   else 
 		   b++;
-		
 		   if(a>b)
 		   System.out.println("A");
 		   else
 		   System.out.println("B");
-		   
-		}
+		   }
 	}
 }
 
