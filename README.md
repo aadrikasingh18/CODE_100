@@ -1,6 +1,40 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+29 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int r1 = sc.nextInt();// A
+		   int w1 = sc.nextInt();// A
+		   int c1 = sc.nextInt();// A  
+		   int r2 = sc.nextInt();// B
+		   int w2 = sc.nextInt();// B
+		   int c2 = sc.nextInt();// B
+		   int a=0, b=0;
+		   
+	      if(((r1 > r2)&&(w1 > w2)) || ((r1 > r2)&&(c1 > c2)) || 
+	         ((w1 > w2)&&(c1 > c2)))
+		   a++;
+		   else 
+		   b++;
+		
+		   if(a>b)
+		   System.out.println("A");
+		   else
+		   System.out.println("B");
+		   
+		}
+	}
+}
+
 28 JAN, 2022
 
 import java.util.Scanner;
