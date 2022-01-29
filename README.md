@@ -10,6 +10,30 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		long h = 0;
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   long a[] = new long[n];
+		   for(int j=0; j<n; j++)
+		   {
+		      a[j] = sc.nextInt();
+		      if(a[j] > h)
+		      h = a[j];
+		   }
+		   System.out.println(h);
+		   h=0;
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
 		   int r1 = sc.nextInt();// A
