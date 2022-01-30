@@ -28,8 +28,7 @@ class Main
 		      if(b[j] == 0)
 		      x++; 
 		   }
-		 
-		   if(m == x)
+		  if(m == x)
 		   System.out.println("Pass");
 		   else
 		   System.out.println("Fail");
