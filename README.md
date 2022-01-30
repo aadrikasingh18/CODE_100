@@ -1,6 +1,42 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+30 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int a[] = new int[3];
+		   int b[] = new int[3];
+		   int m = 0;
+		   int x = 0; 
+		   for(int j=0; j<3; j++)
+		   {
+		      a[j] = sc.nextInt();
+		      if(a[j] == 0)
+		      m++;  
+		   }
+		   for(int j=0; j<3; j++)
+		   {
+		      b[j] = sc.nextInt();
+		      if(b[j] == 0)
+		      x++; 
+		   }
+		 
+		   if(m == x)
+		   System.out.println("Pass");
+		   else
+		   System.out.println("Fail");
+		}
+	}
+}
+
 29 JAN, 2022
 
 import java.util.Scanner;
