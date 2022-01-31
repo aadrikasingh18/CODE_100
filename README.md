@@ -9,6 +9,33 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); // NO OF ITEMS
+		   int k = sc.nextInt(); // PRICE OF EACH ITEM
+		   int a[] = new int[n];
+		   int b = 0, sum = 0;
+		   for(int j=0; j<n; j++)
+		   {
+		      a[j] = sc.nextInt();
+		      if(a[j] > k)
+		      {
+		         b = a[j] - k;
+		         sum = sum + b;
+		      }
+		   }
+		   System.out.println(sum);
+	   }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		//  T20 CRICKET MATCH
 		// CHEF IS IN TEAM B
 		// TEAM A SCORE --> R
