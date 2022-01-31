@@ -1,6 +1,35 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+31 JAN, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		//  T20 CRICKET MATCH
+		// CHEF IS IN TEAM B
+		// TEAM A SCORE --> R
+		// TEAM B --> SCORED C RUNS IN THE FIRST O OVERS
+		// 20-O OVERS MEI RUN TEAM A SE ZYADA BANN SKTE HAI YA NHI
+		int r = sc.nextInt(); // 719
+		int o = sc.nextInt(); // 18
+		int c = sc.nextInt(); // 648
+		// 20-18 = 2
+      // 2*6*6 = 72
+      // 72+648 = 720
+      // ((20-18)*6*6)+648
+      int calc = 0;
+      calc = ((20-o)*6*6)+c;
+      if(calc > r)
+      System.out.println("YES");
+      else
+      System.out.println("NO");
+	}
+}
+
 30 JAN, 2022
 
 import java.util.Scanner;
