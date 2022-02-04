@@ -4,24 +4,26 @@
 
 04 FEB, 2022
 
+--> NO CODING QUES
+
 03 FEB, 2022
 
 --> NO CODING QUES
 --> SOLVED TWO ISSUE IN JWOC (1 EASY & 1 MEDIUM)
-    EASY : BigB-E-learn-Websit-e 
-    MEDIUM : Go-AirBnb
+    EASY : BigB-E-learn-Websit-e (Readme)
+    MEDIUM : Go-AirBnb (navbar)
 
 02 FEB, 2022
 
 --> NO CODING QUES
 --> SOLVED TWO ISSUE IN JWOC (1 EASY & 1 MEDIUM)
-    EASY : BigB-E-learn-Websit-e 
-    MEDIUM : Pictionary
+    EASY : BigB-E-learn-Websit-e (404 error)
+    MEDIUM : Pictionary (navbar)
 
 01 FEB, 2022
 
 --> NO CODING QUES
---> SOLVED ONE ISSUE IN JWOC (EASY)(HackClub-RAIT)
+--> SOLVED ONE ISSUE IN JWOC (EASY)(HackClub-RAIT) (navbar)
 
 31 JAN, 2022
 
