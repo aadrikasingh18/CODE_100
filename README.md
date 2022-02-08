@@ -3,6 +3,43 @@
 
 08 FEB, 2022
 
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		primeFactors(n);
+	}
+	public static void primeFactors(int n)
+	{
+	   for(int i=2; i<n; i++)
+	   {
+	      int x;
+	      if(isPrime(i))
+	      {
+	        x = i;
+	        while(n % x == 0)
+	        {
+	          System.out.print(i + " ");
+	          x = x * i;
+	        }
+	      }
+	   }
+	}
+	public static boolean isPrime(int i)
+	{
+	   int k = 0;
+	   for(int j=2; j<i; j++)
+	   {
+	      if(i % j == 0)
+	      return false;
+	   }
+	   return true;
+	}
+}
+
 07 FEB, 2022
 
 06 FEB, 2022
