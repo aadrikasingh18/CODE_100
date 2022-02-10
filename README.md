@@ -10,6 +10,24 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+	   for(int i=0; i<t; i++)
+	   {
+	      int n = sc.nextInt();
+	      int m = sc.nextInt();
+	      int c = 0;
+	      c = m * n;
+	      System.out.println(c);
+	   }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		// 52 CARDS IN TOTAL
       // K-1 FRNDS
       // TOTAL K PEOPLE WILL PLAY THE GAME --> K-1 FRNDS + ALICE HERSELF 
@@ -25,8 +43,7 @@ class Main
          r = 52 % k;
          System.out.println(r);
       }
-      
-	}
+    }
 }
 
 import java.util.Scanner;
