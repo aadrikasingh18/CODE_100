@@ -4,6 +4,27 @@
 10 FEB, 2022
 
 import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        int t = sc.nextInt();
+        int i,a,b,x,s;
+        for(i=1;i<=t;i++)
+        {
+            x = sc.nextInt();
+            a = sc.nextInt();
+            b = sc.nextInt();
+            s=0;
+            s = a+(100-x)*b ;
+            s = s*10;
+            System.out.println(s);
+        }
+    }
+}
+
+import java.util.Scanner;
 class Main
 {
 	public static void main (String[] args) 
