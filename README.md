@@ -12,6 +12,38 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int x = sc.nextInt();
+		   int y = sc.nextInt();
+		   int sum = 0;
+		   sum = x + y;
+		   if(sum >= 0)
+		   {
+		      if(sum % 2 == 0)
+		      System.out.println("YES");
+		      else 
+		      System.out.println("NO");
+		   }
+		   else if(sum < 0)
+		   {
+		      sum = - sum;
+		      if(sum % 2 == 0)
+		      System.out.println("YES");
+		      else 
+		      System.out.println("NO");
+		   }
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int z = sc.nextInt();
 		   int y = sc.nextInt();
 		   int a = sc.nextInt();
@@ -25,8 +57,7 @@ class Main
 		   System.out.println("YES");
 		   else
 		   System.out.println("NO");
-		   
-		}
+	        }
 	}
 }
 
