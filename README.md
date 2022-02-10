@@ -3,6 +3,27 @@
 
 10 FEB, 2022
 
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt();
+		   int y = sc.nextInt();
+		   int z = sc.nextInt();
+		   int b = 0, s = 0, p = 0;
+		   b = x * y;
+		   s = x * z;
+		   p = s - b;
+		   System.out.println(p);
+		}
+	}
+}
+
 09 FEB, 2022
 
 import java.util.Scanner;
