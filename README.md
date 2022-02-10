@@ -10,6 +10,26 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt();
+		   if(x < 100)
+		   System.out.println("Easy");
+		   else if((100 <= x) && (x < 200))
+		   System.out.println("Medium");
+		   else 
+		   System.out.println("Hard");
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 	   for(int i=0; i<t; i++)
 	   {
 	      int n = sc.nextInt();
