@@ -4,6 +4,37 @@
 10 FEB, 2022
 
 import java.util.Scanner;
+public class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      int t = sc.nextInt();
+      int x,y,x1,y1,d;
+      int i,a,b,c;    
+      for (i=1; i<=t; i++)
+      {
+        x = sc.nextInt();
+        y = sc.nextInt();
+        x1 = sc.nextInt();
+        y1 = sc.nextInt();
+        d = sc.nextInt();
+        a = x/x1;
+        b = y/y1;
+             c = Math.min(a,b);
+             if(d<=c)
+             {
+                 System.out.println("yes");
+             }
+             else
+             {
+                 System.out.println("no");
+             }    
+        }
+    }
+}
+
+import java.util.Scanner;
 class Main
 {
 	public static void main (String[] args) 
