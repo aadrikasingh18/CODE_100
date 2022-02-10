@@ -9,6 +9,34 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		for(int i = 0; i < n; i++)
+		{
+		   double t1, t2, r1, r2;
+		   t1 = sc.nextDouble();
+		   t2 = sc.nextDouble();
+		   r1 = sc.nextDouble();
+		   r2 = sc.nextDouble();
+		   double d1;
+		   double d2;
+		     d1 = (t1 * t1)/(r1 * r1 * r1);
+           d2 = (t2 * t2)/(r2 * r2 * r2);
+           if(d1 == d2)
+           System.out.println("YES");
+           else
+           System.out.println("NO");
+           d1 = 0.0;
+           d2 = 0.0;
+      }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
