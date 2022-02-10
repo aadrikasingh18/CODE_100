@@ -4,6 +4,34 @@
 10 FEB, 2022
 
 import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		// A, B, C --> COMBOS
+		for(int i=0; i<t; i++)
+		{
+		   int a1 = sc.nextInt(); // COMBO A POPCORN
+		   int a2 = sc.nextInt(); // COMBO A COKE
+		   int b1 = sc.nextInt(); // COMBO B POPCORN
+		   int b2 = sc.nextInt(); // COMBO B COKE
+		   int c1 = sc.nextInt(); // COMBO C POPCORN
+		   int c2 = sc.nextInt(); // COMBO C COKE
+		   int a = a1 + a2;
+		   int b = b1 + b2;
+		   int c = c1 + c2;
+		   double max = 0.0;
+		   max = Math.max(a,Math.max(b,c));
+		   int maxi;
+		   maxi = (int) max;
+		   System.out.println(maxi);
+		}
+	}
+}
+
+import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args)
