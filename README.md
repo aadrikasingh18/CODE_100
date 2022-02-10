@@ -10,6 +10,66 @@ class Main
 	{
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); // NUMBER OF ROWS
+		   int m = sc.nextInt(); // NUMBER OF SEATS IN EACH ROW
+         if (n == 1 || n == 2)
+         {
+            int r = 0;
+            r = m % 2;
+            if (r == 0)
+            System.out.println(m/2);
+            else
+            {
+               m = m + 1;
+               System.out.println(m/2);
+            }
+         }
+         
+         if(n > 2)
+         {
+            int s = 0;
+            s = n % 2;
+            if(s == 0)
+            {
+               n = n/2;
+               int r = 0;
+               r = m % 2;
+               if (r == 0)
+               System.out.println((n*m)/2);
+               else
+               {
+                  m = m + 1;
+                  System.out.println((n*m)/2);
+               }
+            }
+            else
+            {
+               n = n + 1;
+               n = n/2;
+               int r = 0;
+               r = m % 2;
+               if (r == 0)
+               System.out.println((n*m)/2);
+               else
+               {
+                  m = m + 1;
+                  System.out.println((n*m)/2);
+               }
+            }
+         }
+      }
+   }
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
 		// A, B, C --> COMBOS
 		for(int i=0; i<t; i++)
 		{
