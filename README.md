@@ -13,6 +13,27 @@ class Main
 		for(int i=0; i<t; i++)
 		{
 		   int x = sc.nextInt();
+		  	int m = sc.nextInt();
+	   	int d = sc.nextInt();
+		   int k = 0, l = 0, ans = 0;
+		   k = m * x;
+		   l = x + d;
+		   ans = Math.min(k,l);
+		   System.out.println(ans);
+		 }
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt();
 		   int y = sc.nextInt();
 		   int sum = 0;
 		   sum = x + y;
