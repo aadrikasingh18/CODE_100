@@ -9,6 +9,27 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt(); //BANANA
+		   int y = sc.nextInt(); //APPLE
+		   int k = 0;
+		   k = x / 2;
+		   if(k >= y)
+		   System.out.println(y);
+		   else
+		   System.out.println(k);
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
