@@ -1,7 +1,28 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
-16 FEB, 2022
+25 FEB, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt();
+		   int x = 0;
+		   x = 7 - n;
+		   System.out.println(x);
+		}
+	}
+}
+
+// STREAK TUT GYI
+
+17 FEB, 2022
 
 16 FEB, 2022
 
