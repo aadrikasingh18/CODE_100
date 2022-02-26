@@ -46,7 +46,6 @@ class Main
 15 FEB, 2022
 
 14 FEB, 2022
---> SENSORS
 
 13 FEB, 2022
 
@@ -167,7 +166,7 @@ class Main
 		   r2 = sc.nextDouble();
 		   double d1;
 		   double d2;
-		     d1 = (t1 * t1)/(r1 * r1 * r1);
+		   d1 = (t1 * t1)/(r1 * r1 * r1);
            d2 = (t2 * t2)/(r2 * r2 * r2);
            if(d1 == d2)
            System.out.println("YES");
@@ -176,7 +175,7 @@ class Main
            d1 = 0.0;
            d2 = 0.0;
       }
-	}
+   }
 }
 
 import java.util.Scanner;
