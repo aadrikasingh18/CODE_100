@@ -12,6 +12,32 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int n = sc.nextInt();
+		   int r = 0;
+		   int g = 0;
+		   r = n % 4;
+		   g = n / 4;
+		   if(n == 0) // 0
+		   System.out.println("0");
+		   else if(n < 4) // 1 2 3
+		   System.out.println("1");
+		   else if(n >= 4 && r == 0)
+		   System.out.println(g);
+		   else
+         System.out.println(g+1);		   
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int x = sc.nextInt(); // TOTAL MONEY
 		   int y = sc.nextInt(); // DAILY EXPENSE
 		   int s = 0;
