@@ -9,6 +9,27 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int a = sc.nextInt(); // SOLID
+		   int b = sc.nextInt(); // LIQUID
+		   if(a > 0 && b > 0)
+		   System.out.println("Solution");
+		   else if(a != 0 && b == 0)
+		   System.out.println("Solid");
+		   else if(a == 0 && b != 0)
+		   System.out.println("Liquid");
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		// brown, blue, and green
 		// green --> rarest
 		// brown --> most common
