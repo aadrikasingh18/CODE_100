@@ -9,6 +9,34 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt(); // RCB POINTS
+		   int y = sc.nextInt(); // ATLEAST Y POINTS ARE NEEDED TO QUALIFY
+		   int z = sc.nextInt(); // Z GAMES LEFT
+		   if(x >= y)
+		   System.out.println("YES");
+		   else
+		   {
+		      int p = 0, r = 0;
+		      p = z * 2; // RCB SARE GAME AGR JEETI TOH ETNE AUR PTS MILLENGE
+		      r = x + p;
+		      if(r >= y)
+		      System.out.println("YES");
+		      else
+		      System.out.println("NO");
+		   }
+		}
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int u = sc.nextInt();
 		int t = 0;
