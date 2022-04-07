@@ -1,6 +1,23 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+07 APRIL, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int u = sc.nextInt();
+		int t = 0;
+		t = n - u;
+		System.out.println(t);
+	}
+}
+
+
 06 APRIL, 2022
 
 import java.util.Scanner;
