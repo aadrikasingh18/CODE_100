@@ -9,6 +9,36 @@ class Main
 	public static void main (String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		// brown, blue, and green
+		// green --> rarest
+		// brown --> most common
+		// R --> Brown
+		// B --> Blue 
+		// G --> Green
+	   char ch1, ch2;
+	   ch1 = sc.next().charAt(0);
+	   ch2 = sc.next().charAt(0);
+	   if(ch1 == 'R' && ch2 == 'R')
+	   System.out.println("R");
+	   else if(ch1 == 'B' && ch2 == 'B')
+	   System.out.println("B");
+	   else if(ch1 == 'G' && ch2 == 'G')
+	   System.out.println("G");
+	   else if(ch1 == 'R' && ch2 == 'B' || ch2 == 'R' && ch1 == 'B') // BROWN BLUE
+	   System.out.println("R");
+	   else if(ch1 == 'R' && ch2 == 'G' || ch2 == 'R' && ch1 == 'G') // BROWN GREEN
+	   System.out.println("R");
+	   else if(ch1 == 'B' && ch2 == 'G' || ch2 == 'B' && ch1 == 'G') // BLUE GREEN
+	   System.out.println("B");
+	}
+}
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
