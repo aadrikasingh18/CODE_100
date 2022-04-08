@@ -12,6 +12,26 @@ class Main
 		int t = sc.nextInt();
 		for(int i=0; i<t; i++)
 		{
+		   int x = sc.nextInt(); // manipulate kr skta
+		   int y = sc.nextInt(); // total gaurds
+		   if(x >= y)
+		   System.out.println("YES");
+		   else
+         System.out.println("NO");
+		}
+	}
+}
+
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
 		   int x = sc.nextInt();
 		   int y = sc.nextInt();
 		   int m = sc.nextInt();
