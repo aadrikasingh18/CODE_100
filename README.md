@@ -1,6 +1,33 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+08 APRIL, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int x = sc.nextInt();
+		   int y = sc.nextInt();
+		   int m = sc.nextInt();
+	      // Rent a cooler at the cost of X coins per month.
+         // Purchase a cooler for Y coins. 
+         // Summer season will last for M months.
+         int p = 0;
+         p = x * m;
+         if(p < y)
+         System.out.println("YES");
+         else
+         System.out.println("NO");
+		}
+	}
+}
+
 07 APRIL, 2022
 
 import java.util.Scanner;
