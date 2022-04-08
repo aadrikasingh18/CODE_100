@@ -36,7 +36,7 @@ class Main
 		   int y = sc.nextInt();
 		   int m = sc.nextInt();
 	      // Rent a cooler at the cost of X coins per month.
-         // Purchase a cooler for Y coins. 
+              // Purchase a cooler for Y coins. 
          // Summer season will last for M months.
          int p = 0;
          p = x * m;
@@ -48,7 +48,6 @@ class Main
 	}
 }
 
-07 APRIL, 2022
 
 import java.util.Scanner;
 class Main
@@ -75,6 +74,7 @@ class Main
 	}
 }
 
+07 APRIL, 2022
 
 import java.util.Scanner;
 class Main
