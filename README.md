@@ -1,6 +1,38 @@
 # CODE_100
 ### STARTED ON 17 DEC, 2021
 
+13 APRIL, 2022
+
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		// N loaves of bread,
+		// all of which expire after exactly M days
+		// She can eat upto K loaves of bread in a day.
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		   int n = sc.nextInt(); // no. of bread
+		   int m = sc.nextInt(); // expire
+		   int k = sc.nextInt(); // each day
+		   double s = 0.0;
+		   double n1 = 0.0;
+		   double k1 = 0.0;
+		   n1 = n;
+		   k1 = k;
+		   s = n1 / k1;
+		   if(s <= m)
+		   System.out.println("YES");
+		   else
+		   System.out.println("NO");
+		}
+	}
+}
+
+
 09 APRIL, 2022
 
 import java.util.Scanner;
