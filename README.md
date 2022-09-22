@@ -343,24 +343,6 @@ class Main
 	}
 }
 
-// STREAK TUT GYI
-
-17 FEB, 2022
-
-16 FEB, 2022
-
-15 FEB, 2022
-
-14 FEB, 2022
-
-13 FEB, 2022
-
-12 FEB, 2022
-
-11 FEB, 2022
-
-10 FEB, 2022
-
 import java.util.Scanner;
 class Main
 {
